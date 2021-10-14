@@ -1,0 +1,14 @@
+.elemento{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p{
+  text-align: center;
+}
