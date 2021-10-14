@@ -1,14 +1,25 @@
 let elemento = document.getElementById('elemento');
+let cantidad = 0;
 window.addEventListener('keydown', (e) =>{
   let tecla = e.key;
   console.log( e.key)
 
   switch (tecla) {
     case 'ArrowUp':
-      elemento.style.transform = "translateY(-100px)"
+      cantidad -= 100;
+      elemento.style.transform = `translateY(${cantidad}px)`;
       break;
     case 'ArrowDown':
-      elemento.style.transform = "translateY(100px)"
+    cantidad += 100;
+    elemento.style.transform = `translateY(${cantidad}px)`;
+      break;
+    case 'ArrowRight':
+    cantidad += 100;
+    elemento.style.transform = `translateX(${cantidad}px)`;
+      break;
+    case 'ArrowLeft':
+      cantidad -= 100;
+      elemento.style.transform = `translateX(${cantidad}px)`;
       break;
     default:
 
